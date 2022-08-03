@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, dodgerblue, white);
+}
+
+main{
+    position: relative;
+}
+
+.pokedex{
+    width: 100%;
+    min-width: 425px;
+    padding: 10px;
+}
+
+.imgPokemon{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 18%;
+    transform: translate(-60%, 0);
+}
+
+.pokemon{
+    position: absolute;
+    top: 54%;
+    left: 30%;
+    height: 5%;
+    width: 45%;
+    font-weight: bold;
+    font-size: clamp(8px, 5vw, 20px);
+    text-align: right;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.pesquisa{
+    position: absolute;
+    top: 65%;
+    left: 21%;
+    height: 5%;
+    width: 58%;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    background-color: #E3E3E3;
+    box-shadow: -3px 3px 0px #575a58;
+    padding: 5px;
+    font-weight: bold;
+    font-size: clamp(8px, 5vw, 20px); /*clamp(min, default, max)*/
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pesquisa:focus{
+    outline: 0;
+}
+
+.anterior{
+    position: absolute;
+    bottom: 20%;
+    left: 21%;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    background-color: #D30A40;
+    box-shadow: -4px 4px 0px #93042A;
+    padding: 5px;
+    font-weight: bold;
+    font-size: clamp(8px, 5vw, 20px);
+    height: 6%;
+    width: 25%;
+}
+
+.anterior:active{
+    box-shadow: inset -4px 4px 0px #93042A;
+}
+
+.anterior:hover{
+    cursor: pointer;
+}
+
+.proximo{
+    position: absolute;
+    bottom: 20%;
+    right: 22%;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    background-color: #D30A40;
+    box-shadow: -4px 4px 0px #93042A;
+    padding: 5px;
+    font-weight: bold;
+    font-size: clamp(8px, 5vw, 20px);
+    height: 6%;
+    width: 25%;
+}
+
+.proximo:active{
+    box-shadow: inset -4px 4px 0px #93042A;
+}
+
+.proximo:hover{
+    cursor: pointer;
+}
